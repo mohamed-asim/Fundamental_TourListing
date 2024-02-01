@@ -1,3 +1,16 @@
+## What I Learnt
+
+Loading should be made false both if success happens and also after try/catch method so that it doesnt always display.
+Async and Await methods to be used for fetch operations for proper flow of data.
+
+To delete a tour, in the main page where u fetch all the tours , the id of the tour is available so u can delete.
+
+In filter function tours.filter((tour) => {tour.id !== id;}); => this deleted the whole list where as without curly deleted properly
+
+In javascript substring(0,10) , 0 is starting and 10 is ending returns oly first 10 characters.
+
+For reload tours do not pass onClick={fetchTours()} as it will load the function without clicking as it invokes everytime the component renders correct way is onClick={() => fetchTours()}
+
 ## Figma URL
 
 [Tours](https://www.figma.com/file/OnLoM3AzBFaHzSc2iolJS0/Tours?node-id=0%3A1&t=wiRXOlTLN5ehekYI-1)
